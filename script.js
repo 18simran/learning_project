@@ -293,3 +293,6 @@ dotContainer.addEventListener('click', function (e) {
     activateDot(slide);
   }
 });
+
+// 🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄⚽⚽⚽⚽⚽😊😊😊📖📖📖
+// ASYNCGRONUS JAVASCRIPT
