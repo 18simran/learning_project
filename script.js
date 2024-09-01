@@ -92,7 +92,6 @@ logo.classList.remove('c', 'j');
 
 ///
 const btnScrollTo = document.querySelector('.btn--scroll-to');
-console.log(btnScrollTo);
 btnScrollTo.addEventListener('click', function (e) {
   e.preventDefault();
   const s1coords = section1.getBoundingClientRect();
@@ -187,7 +186,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 //reveal-on-scroll feature using intersectionObserver
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section--hidden');
   observer.unobserve(entry.target);
@@ -201,8 +199,10 @@ allSections.forEach(function (section) {
 
   section.classList.add('section--hidden');
 });
-console.log('Lazy Loading section');
+
 //lazy-loading-images feature
+console.log('Lazy Loading section');
+
 const loadImg = function (entries, observer) {
   const [entry] = entries;
 
@@ -295,4 +295,4 @@ dotContainer.addEventListener('click', function (e) {
 });
 
 // 🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄⚽⚽⚽⚽⚽😊😊😊📖📖📖
-// ASYNCGRONUS JAVASCRIPT
+// ASYNCHRONUS JAVASCRIPT
